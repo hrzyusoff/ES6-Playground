@@ -32,9 +32,12 @@ delete books.isBorrowed
 console.log(typeof books)
 console.log(books)
 
+let systemPrompt = prompt("Add new properties for books ?")
+books.dateBorrowed = systemPrompt
 
-let userInput = prompt("What you want know about this book ?")
-console.log(books[userInput])
+console.log(books.dateBorrowed)
+
+
 // END OF OBJECT
 
 // "Object in organization is "+organization, "Items in organization at D is "+organization.d, "Compare value (===) 999 and '999' is "+a === c, "Splitting a in aaa999sd&dsjksaaasd : "+b.split('a')
