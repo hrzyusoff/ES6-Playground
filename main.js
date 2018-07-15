@@ -26,13 +26,37 @@ books = {
 
 // book_library()
 // fruit_bag()
-block_scope()
+// block_scope()
+job_assignment()
 
 
 // TEST BLOCK SCOPE
-function block_scope () {
+// function block_scope () {
 
+// }
+
+// JOB
+function job_assignment () {
+    let hr = {
+        name: "Senah"
+    }
+
+    let it = hr
+    
+    // Primitive values : String, Numbers, booleans - assigned / copied by whole value
+    let name_A = "Ali"
+    let name_B = name_A
+
+    name_B = "Pablo"
+
+    console.log(name_A+" "+name_B)
+
+    // Object do copy by reference
+    it.name = "Rogayah"
+    hr.name = "Jenab"
+    console.log(hr.name+" "+it.name)
 }
+
 
 // SORT
 function sort_anything () {
